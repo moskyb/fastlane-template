@@ -4,7 +4,9 @@ env:
 steps:
   - label: ":bundler: Install dependencies"
     key: deps
-    command: "bundle install --path $BUNDLE_PATH"
+    command:
+      - "bundle config path $BUNDLE_PATH"
+      - "bundle install"
     plugins:
       - artifacts#v1.9.3:
           upload: "$BUNDLE_PATH"

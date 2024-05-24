@@ -90,3 +90,9 @@ fastlane/dsyms
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+
+# Gems
+vendor/bundle
+
+# Apple
+.DS_Store
